@@ -1,0 +1,24 @@
+<section class="sub-banner" data-stellar-background-ratio="0.5">
+  <div class="overlay">
+    <div class="container">
+      <h3>UNI-CA</h3>
+      <p class="p-text-bold">Clínica Ambulatoria</p>
+    </div>
+  </div>
+</section>
+<section class="gallery-pages">
+  <div class="portfolio-wrapper">
+    <div class="container popup-gallery">
+      <h2 class="text-left">
+        <span class="fixtitle">Nuestras instalaciones</span>
+      </h2>
+
+      <ngx-masonry [options]="masonryOptions" [useImagesLoaded]="true">
+        <ngxMasonryItem *ngFor="let img of masonryImages" class="masonry-item">
+          <img src="{{ img.url }}" />
+        </ngxMasonryItem>
+      </ngx-masonry>
+
+    </div>
+  </div>
+</section>

@@ -1,0 +1,68 @@
+<section class="contact-info">
+  <div class="container">
+    <ul class="row">
+      <li class="col-md-3">
+        <i class="fas fa-map-marker-alt"></i>
+        <h5 class="mt-5">Dirección</h5>
+        <p>Prol. Degollado No. 151 Centro Pénjamo, Gto.</p>
+      </li>
+
+      <li class="col-md-3">
+        <i class="fas fa-phone-square"></i>
+        <h5 class="mt-5">Teléfono clínica</h5>
+        <p>(469) 695 0124 o 69 50713</p>
+      </li>
+
+      <li class="col-md-3">
+        <i class="fas fa-mobile-alt"></i>
+        <h5 class="mt-5">Teléfono celular</h5>
+        <p>(469) 621 8480</p>
+      </li>
+
+      <li class="col-md-3">
+        <i class="fas fa-envelope"></i>
+        <h5 class="mt-5">Correo electrónico</h5>
+        <p>cendejasalatorreconsul@yahoo.com.mx</p>
+      </li>
+    </ul>
+  </div>
+</section>
+<footer>
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-9">
+        <div class="small-info">
+          <img src="./assets/img/logo-white.png" alt="" />
+          <p>
+            UNI-CA Clínica Ambulatoria es una unidad de atención especializada
+            en pie diabético, cuidados de heridas y cirugías de corta estancia.
+          </p>
+          <ul class="social_icons">
+            <li class="facebook">
+              <a href="https://www.facebook.com/Uni-Ca-Cl%C3%ADnica-Ambulatoria-919021944871793/" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="links text-right">
+          <!-- Timing -->
+          <div class="timing">
+            <h5>Horarios</h5>
+            <p *ngFor="let hr of horario?.horarios">
+              {{hr.dia}}
+              <span>{{hr.hora}}</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="rights">
+    <p>© {{ year }} UNI-CA Clínica Ambulatoria</p>
+  </div>
+</footer>

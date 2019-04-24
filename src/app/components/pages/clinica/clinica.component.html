@@ -1,0 +1,770 @@
+<section class="sub-banner" data-stellar-background-ratio="0.5">
+  <div class="overlay">
+    <div class="container">
+      <h3>UNI-CA Clínica Ambulatoria</h3>
+      <p class="p-text-bold">Tecnología y profesionalimdo es característico de nuestro servicio</p>
+    </div>
+  </div>
+</section>
+
+<div class="content fix-nav-space">
+  <!--======= OFFER SERVICES =========-->
+
+  <section class="offer-services">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <div role="tabpanel active-tabs">
+            <!--======= NAV TABS =========-->
+            <ul class="nav nav-tabs" role="tablist">
+              <li>
+                <a href="#unidadintegral" class="active" id="tabslink" role="tab" data-toggle="tab">UNIDAD INTEGRAL EN
+                  MANEJO DE PIE
+                  DIABÉTICO:</a>
+              </li>
+              <li>
+                <a href="#plantillas" id="tabslink" role="tab" data-toggle="tab">ÓRTESIS Y
+                  PROTESIS DE EXTREMIDADES:
+                </a>
+              </li>
+              <li>
+                <a href="#cuidadoheridas" id="tabslink" role="tab" data-toggle="tab">UNIDAD DE
+                  MANEJO AVANZADO DE
+                  HERIDAS:</a>
+              </li>
+              <li>
+                <a href="#ambulatoria" id="tabslink" role="tab" data-toggle="tab">CIRUGÍA DE
+                  CORTA ESTANCIA O
+                  AMBULATORIA: </a>
+              </li>
+              <li>
+                <a href="#laparoscopica" id="tabslink" role="tab" data-toggle="tab">CIRUGÍA
+                  LAPAROSCÓPICA: </a>
+              </li>
+              <li>
+                <a href="#varices" id="tabslink" role="tab" data-toggle="tab">TRATAMIENTO Y
+                  CIRUGÍA LASER DE
+                  VARICES:</a>
+              </li>
+              <li>
+                <a href="#nutricion" id="tabslink" role="tab" data-toggle="tab">NUTRICIÓN:</a>
+              </li>
+              <li>
+                <a href="#podologia" id="tabslink" role="tab" data-toggle="tab">CONSULTA DE
+                  ESPECIALIDAD:</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!--======= NAV TABS CONTENT =========-->
+        <div class="col-md-7">
+          <div class="tab-content">
+
+            <!--======= UNIDAD INTEGRAL =========-->
+            <div role="tabpanel" class="tab-pane animated fadeIn active" id="unidadintegral">
+              <h4>UNIDAD INTEGRAL EN MANEJO DE PIE DIABÉTICO:</h4>
+              <!-- mdall Facts -->
+              <div class="col-md-12 marginfix">
+                <p>Realizamos como parte del protocolo de atención:</p>
+                <p>
+                  <i class="far fa-check-circle redcolor iconFix"></i>
+                  <strong>EVALUACIÓN CLÍNICA DEL PIE:</strong>
+                  <ul class="time-line">
+                    <!-- 1 -->
+                    <li class="row">
+                      <div class="col-xs-9">
+                        <h6 class="font-bold">Dermatológico.</h6>
+                      </div>
+                    </li>
+                    <li class="row">
+                      <div class="col-xs-9">
+                        <h6 class="font-bold">Músculo-esquelético.</h6>
+                      </div>
+                    </li>
+                    <li class="row">
+                      <div class="col-xs-9">
+                        <h6 class="font-bold">Neurológico.</h6>
+                      </div>
+                    </li>
+                    <li class="row">
+                      <div class="col-xs-9">
+                        <h6 class="font-bold">Vascular.</h6>
+                      </div>
+                    </li>
+                    <li class="row">
+                      <div class="col-xs-9">
+                        <h6 class="font-bold">Laboratorio clínico:</h6>
+                        <p>Glucosa, colesterol, triglicéridos, hemoglobina glicosilada, biometría hemática y química
+                          clínica.</p>
+                      </div>
+                    </li>
+                    <!-- <li>
+                <strong class="font-italic">Dermatológico, Músculo-esquelético, Neurológico, Vascular.</strong>
+                <strong class="font-italic"> </strong>
+
+                <br>
+              </li> -->
+                  </ul>
+              </div>
+
+              <!-- GALERIA EVALUACIÓN CLÍNICA DEL PIE -->
+
+              <section class="gallery-pages">
+                <div class="portfolio-wrapper">
+                  <div class="container popup-gallery">
+                    <ul class="items gallery-item row masonry">
+                      <li class="col-md-6" *ngFor=" let img of clinica?.evaluacion_clinica_pie">
+                        <img class="img-responsive item-masonry" src="{{ img.url }}">
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+
+              <div class="col-md-12 marginfix">
+                <p>
+                  <i class="far fa-check-circle redcolor iconFix"></i>
+                  <strong>ESTUDIOS COMPLEMENTARIOS:</strong> Dependiendo de la patología del paciente, contamos con
+                  estudios:
+                  <br>
+                  <ul clas="fact row">
+                    <li class="col-md-12">
+                      <p>
+                        <strong class="font-italic-bold">Biomecánica de la marcha:</strong> Para valorar las presiones
+                        en la planta de los pies y realizar plantillas personalizadas adaptadass a cada patología.</p>
+                    </li>
+                    <li class="col-md-12">
+                      <p>
+                        <strong class="font-italic-bold">Estudio MATSCAN (TEKSCAN)</strong>: Es un tapete con sensores
+                        que mide la presión plantar en la deambulación o marcha, localizando los puntos de mayor presión
+                        y con
+                        riesgo de ulceración.</p>
+                    </li>
+
+                    <!-- GALERIA  ESTUDIOS COMPLEMENTARIOS 1: -->
+                    <section class="gallery-pages">
+                      <div class="masonry">
+                        <div class="item-masonry" *ngFor="let img of clinica?.unidad_integral_pie_diabetico.matscan">
+                          <img class="img-responsive" src="{{ img.url }}" alt="">
+                        </div>
+                      </div>
+                    </section>
+                    <li class="col-md-12">
+                      <p>
+                        <strong class="font-italic-bold">Estudio SCANFEET (AMFIT):</strong> Es un digitalizador el cual
+                        realiza plantillas personalizadas a la medida y forma del pie del paciente. Ambos estudios nos
+                        dan
+                        información en tiempo real al momento de la deambulación y así realizar la plantilla u ortesís
+                        ideal para cada paciente.</p>
+                    </li>
+
+                    <!-- GALERIA  ESTUDIOS COMPLEMENTARIOS SCANFEET: -->
+                    <section class="gallery-pages">
+                      <div class="masonry">
+                        <div class="item-masonry" *ngFor="let img of clinica?.unidad_integral_pie_diabetico.scanfeet">
+                          <img class="img-responsive" src="{{ img.url }}" alt="">
+                        </div>
+                      </div>
+                    </section>
+
+                    <li class="col-md-12">
+                      <p>
+                        <strong class="font-italic-bold"> UNI-CA Clínica Ambulatoria
+                          realizamos el estudios de
+                          baropodografia digital y verificación de plantillas con
+                          equipo
+                          F-scan para validación de las descargas en zonas de alto
+                          riesgo
+                          de ulceración.</strong>
+                      </p>
+                      <p>
+                        Se revisan las cargas en el pie utilizando un sensor que mide la
+                        presion en la caminata con la plantilla personalizada, se
+                        colocan los sensores dentro del calzado para valorar las
+                        descargas realizadas en la plantilla.
+                      </p>
+                      <section class="gallery-pages">
+                        <div class="masonry">
+                          <div class="item-masonry"
+                            *ngFor="let img of clinica?.unidad_integral_pie_diabetico[0].estudios_baropodografia[0].bloque_uno">
+                            <img class="img-responsive" src="{{ img.url }}" alt="">
+                          </div>
+                        </div>
+                      </section>
+                      <p>
+                        Estudio con plantillas personalizadas comprobando objetivamente
+                        la descarga en los puntos de mayor presión (zonas rojas), primer
+                        imagen con plantillas personalizadas
+                        segunda imagen previó al uso de plantillas. Objetivamente se
+                        verifica la descarga en zonas de alto riesgo de ulceración.
+                      </p>
+
+                      <p>
+                        Las gráficas nos apoyan en el estudio de la marcha y la adecuada
+                        descarga en el pie.
+                      </p>
+
+                      <section class="gallery-pages">
+                        <div class="masonry">
+                          <div class="item-masonry"
+                            *ngFor="let img of clinica?.unidad_integral_pie_diabetico[0].estudios_baropodografia[0].bloque_dos">
+                            <img class="img-responsive" src="{{ img.url }}" alt="">
+                          </div>
+                        </div>
+                      </section>
+
+                      <p>
+                        Imagenes en 3D valorando el pico de presión en la zona de
+                        interés.
+                      </p>
+
+                      <section class="gallery-pages">
+                        <div class="masonry">
+                          <div class="item-masonry"
+                            *ngFor="let img of clinica?.unidad_integral_pie_diabetico[0].estudios_baropodografia[0].bloque_tres">
+                            <img class="img-responsive" src="{{ img.url }}" alt="">
+                          </div>
+                        </div>
+                      </section>
+                    </li>
+
+                    <li class="col-md-12">
+                      <p>
+                        <strong class="font-italic-bold">Laboratorio vascular no invasivo e invasivo:</strong> Son
+                        necesarios para realizar valoracion de la micro y macrocirculación a nivel del pie nos dan un
+                        diagnóstico
+                        real del grado de insuficiencia arterial, apoyandonos para realizar el mejor manejo para esta
+                        patología.</p>
+                    </li>
+                    <!-- GALERIA  ESTUDIOS COMPLEMENTARIOS: -->
+                    <section class="gallery-pages">
+                      <div class="portfolio-wrapper">
+                        <div class="container popup-gallery">
+                          <ul class="items gallery-item row masonry">
+                            <li class="col-md-6"
+                              *ngFor=" let img of clinica?.unidad_integral_pie_diabetico[0].invasivo_no_invasivo">
+                              <img class="img-responsive item-masonry" src="{{ img.url }}">
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </section>
+                  </ul>
+
+                  <ul clas="fact row">
+                    <li class="col-md-12">
+                      <p>Contamos con:</p>
+                    </li>
+                    <li class="col-md-12">
+                      <p>
+                        <strong class="font-italic-ibold"> Doppler de flujo e índice tobillo-brazo: </strong> Utilizado
+                        para valorar el flujo arterial en el pie y su grado de obstrucción.</p>
+                    </li>
+                    <!-- GALERIA DOPPLER -->
+                    <section class="gallery-pages">
+                      <div class="portfolio-wrapper">
+                        <div class="container popup-gallery">
+                          <ul class="items gallery-item row masonry">
+                            <li class="col-md-6" *ngFor=" let img of clinica?.unidad_integral_pie_diabetico[0].doppler">
+                              <img class="img-responsive item-masonry" src="{{ img.url }}">
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </section>
+                    <li class="col-md-12">
+                      <p>
+                        <strong class="font-italic-bold">Tensión percutanea de tensión percutánea de oxígeno (Periflux
+                          6000): </strong> Valora la microcirculación a nivel de capilares de epidermis, necesario para
+                        diagnosticar
+                        si una herida tiene el suficiente aporte de oxígeno para poder epitelizar, su valor normal es de
+                        70mmhg, menor de 30mmhg hay mínima posibilidad de epitelización y requiere estudios
+                        complementarios
+                        para planear su revascularización. Útil para valorar si el paciente es candidato a la terapia
+                        con cámara hiperbárica o planear una cirugía electiva de extremidad inferior con insuficiencia
+                        arterial
+                        o decidir el nivel exacto de amputación.</p>
+                    </li>
+                    <!-- GALERIA Tensión percutanea de tensión -->
+                    <section class="gallery-pages">
+                      <div class="portfolio-wrapper">
+                        <div class="container popup-gallery">
+                          <ul class="items gallery-item row masonry">
+                            <li class="col-md-6" *ngFor=" let img of clinica?.unidad_integral_pie_diabetico[0].tension">
+                              <img class="img-responsive item-masonry" src="{{ img.url }}">
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </section>
+                    <li class="col-md-12">
+                      <p>
+                        <strong class="font-italic-bold">Ultrasonido doppler-duplex</strong> Define la anatomía y los
+                        flujos sanguíneos a nivel de las extremidades.
+                      </p>
+                    </li>
+                    <!-- GALERIA Tensión percutanea de tensión -->
+                    <section class="gallery-pages">
+                      <div class="portfolio-wrapper">
+                        <div class="container popup-gallery">
+                          <h2 class="text-left">
+                          </h2>
+                          <ul class="items gallery-item row">
+
+                            <li class="col-md-12 item ">
+                              <vg-player>
+                                <vg-scrub-bar>
+                                  <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+                                  <vg-scrub-bar-buffering-time></vg-scrub-bar-buffering-time>
+                                </vg-scrub-bar>
+                                <vg-controls>
+                                  <vg-play-pause></vg-play-pause>
+                                  <vg-time-display [vgProperty]="'current'"></vg-time-display>
+                                  <vg-scrub-bar></vg-scrub-bar>
+                                  <vg-time-display [vgProperty]="'total'"></vg-time-display>
+                                  <vg-mute></vg-mute>
+                                  <vg-volume></vg-volume>
+                                </vg-controls>
+                                <video [vgMedia]="ultrasonido_doppler" #ultrasonido_doppler id="singleVideo">
+                                  <source src="../../../../assets/videos/ultrasonido doppler.mp4" type="video/mp4">
+                                </video>
+                              </vg-player>
+                            </li>
+                            <li class="col-md-12 item ">
+                              <vg-player>
+                                <vg-scrub-bar>
+                                  <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+                                  <vg-scrub-bar-buffering-time></vg-scrub-bar-buffering-time>
+                                </vg-scrub-bar>
+                                <vg-controls>
+                                  <vg-play-pause></vg-play-pause>
+                                  <vg-time-display [vgProperty]="'current'"></vg-time-display>
+                                  <vg-scrub-bar></vg-scrub-bar>
+                                  <vg-time-display [vgProperty]="'total'"></vg-time-display>
+                                  <vg-mute></vg-mute>
+                                  <vg-volume></vg-volume>
+                                </vg-controls>
+                                <video [vgMedia]="ultrasonido" #ultrasonido id="singleVideo">
+                                  <source src="../../../../assets/videos/ultrasonido.mp4" type="video/mp4">
+                                </video>
+                              </vg-player>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </section>
+                    <li class="col-md-12">
+                      <p>
+                        <strong class="font-italic-bold">Angiografía diagnóstica con contraste no iónico y CO2:
+                        </strong> Nos define la anatomía exacta del árbol arterial en las extremidades y el nivel de
+                        obstrucción. Indispensable
+                        para la planeación de una revascularización distal.</p>
+                    </li>
+                    <!-- GALERIA Angiografía diagnóstica -->
+                    <section class="gallery-pages">
+                      <div class="portfolio-wrapper">
+                        <div class="container popup-gallery">
+                          <ul class="items gallery-item row masonry">
+                            <li class="col-md-6"
+                              *ngFor=" let img of clinica?.unidad_integral_pie_diabetico[0].angiografia">
+                              <img class="img-responsive item-masonry" src="{{ img.url }}">
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </section>
+                  </ul>
+              </div>
+            </div>
+
+            <!--======= PLANTILLAS =========-->
+            <div role="tabpanel" class="tab-pane animated fadeIn" id="plantillas">
+              <h4>ÓRTESIS Y PROTESIS DE EXTREMIDADES</h4>
+
+              <div class="col-md-12 marginfix">
+                <p>
+                  <strong>¿Qué es una prótesis?</strong>
+                </p>
+                <p>
+                  Definido en términos simples, una prótesis es un dispositivo hecho por el hombre, el cual reemplaza el
+                  miembro amputado. Una prótesis no es algo que pueda ser ordenado de un catalogo; cada una está
+                  especialmente diseñada para su futuro usuario. Son hechas
+                  con las especificaciones de las medidas de tu cuerpo, el largo de tu muñón, tu peso, edad y estilo de
+                  vida.
+                </p>
+                <p>
+                  De la mimda manera en que tomara tiempo hacer una prótesis que sea adecuada para ti, igualmente te
+                  tomara tiempo acostumbrarte a utilizarla. No esperes que la prótesis sea el reemplazo idéntico de tu
+                  miembro natural. Sin embargo, con el tiempo te sorprenderás
+                  de cuanto podrás hacer con tu prótesis.
+                </p>
+              </div>
+              <!-- GALERIA Angiografía diagnóstica -->
+
+              <section class="gallery-pages">
+                <div class="portfolio-wrapper">
+                  <div class="container popup-gallery">
+                    <ul class="items gallery-item row masonry">
+                      <li class="col-md-6" *ngFor="let img of clinica?.ortesis[0].uno">
+                        <img class="img-responsive item-masonry" src="{{ img.url }}">
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+              <div class="col-md-12 marginfix">
+                <p>
+                  <strong>¿Qué tan pronto puedo obtener una prótesis?</strong>
+                </p>
+                <p>
+                  Después de la amputación, cuando la herida ya haya sanado y cuando el muñón esté preparado con
+                  ejercicios y vendas, entonces podrá iniciar el proceso de adquirir una prótesis. Generalmente, toma de
+                  4 a 5 semanas después de la operación. Puede tomar unos
+                  meses o más dependiendo de sus condiciones de vida. El periodo entre tu cirugía y la primera prueba de
+                  tu prótesis depende de que tan rápido te cures. La línea de la sutura debe estar cerrada y no debe de
+                  haber
+                  ningún drenaje o herida aparente en el muñón. Tu salud general también debe de estar en un estado que
+                  te permita tolerar los ejercicios físicos requeridos. Una prescripción médica es necesaria para
+                  obtener una
+                  prótesis.
+                </p>
+              </div>
+
+              <section class="gallery-pages">
+                <div class="portfolio-wrapper">
+                  <div class="container popup-gallery">
+                    <ul class="items gallery-item row masonry">
+                      <li class="col-md-6" *ngFor="let img of clinica?.ortesis[0].dos">
+                        <img class="img-responsive item-masonry" src="{{ img.url }}">
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+              <div class="col-md-12 marginfix">
+                <p>
+                  <strong>¿Quien hará mi prótesis?</strong>
+                </p>
+                <p>
+                  Un protesista es un experto en prótesis que diseña, elabora y ajusta la prótesis prescrita por un
+                  médico. Un protesista recibe el título de Órtesista Prótesista Certificado (C.P.O.) o Protesista
+                  Certificado (C.P.) título dado por la “Sociedad Internacional
+                  de Órtesistas y Prótesistas” (ISPO) o por la Asociación Americana para la Certificación en Órtesis y
+                  Prótesis Inc. Y se empeña en apoyar las normas más altas de profesionalimdo y ética en el cuidado de
+                  pacientes
+                  con discapacidad. Sus habilidades y educación son actualizadas a través de publicaciones,
+                  conferencias, seminarios, cursos cortos de educación continua, ofrecidos mediante la Sociedad.
+                </p>
+              </div>
+
+              <section class="gallery-pages">
+                <div class="portfolio-wrapper">
+                  <div class="container popup-gallery">
+                    <ul class="items gallery-item row masonry">
+                      <li class="col-md-6" *ngFor="let img of clinica?.ortesis[0].tres">
+                        <img class="img-responsive item-masonry" src="{{ img.url }}">
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+              <div class="col-md-12 marginfix">
+                <p>
+                  <strong>Selección o diseño de su órtesis</strong>
+                </p>
+                <p>Trabajando en base a una prescripción el órtesista determinará primero el mejor tipo de órtesis para
+                  sus necesidades individuales. Algunas veces un dispositivo prefabricado será la mejor elección. Si
+                  este es el
+                  caso el órtesista realizará los ajustes necesarios y le enseñará su uso y cuidado. Con más frecuencia,
+                  especialmente con órtesis que serán utilizadas un período de tiempo mayor, la órtesis deberá ser
+                  diseñada
+                  a su medida. Si este es su caso el órtesista deberá tomar ciertas medidas para obtener un diseño y
+                  ajuste a la medida.
+                </p>
+              </div>
+
+              <section class="gallery-pages">
+                <div class="portfolio-wrapper">
+                  <div class="container popup-gallery">
+                    <ul class="items gallery-item row masonry">
+                      <li class="col-md-6" *ngFor="let img of clinica?.ortesis[0].cuatro">
+                        <img class="img-responsive item-masonry" src="{{ img.url }}">
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+              <div class="col-md-12 marginfix">
+                <p>
+                  <strong>La Órtesis Diseñada a la Medida.</strong>
+                </p>
+                <p>Cuando el médico prescribe un dispositivo hecho a la medida su primera visita incluirá una impresión
+                  o molde para elaborar la órtesis. Este tipo de órtesis tomará varios días en su elaboración. El
+                  órtesista se apoyará
+                  en personal calificado para la fabricación de su órtesis. La fabricación comprende un proceso de
+                  modificación, el cual es importante para una óptima adaptación. Este proceso de modificación es con
+                  frecuencia
+                  muy intenso y demandará, de parte del órtesista, profundos conocimientos, experiencia y habilidades y
+                  sobre todo tener en mente los objetivos que usted desea y necesitar obtener. Cuando la órtesis
+                  diseñada a
+                  su medida ha sido terminada, el órtesista la adaptará a usted y le proporcionará instrucciones de cómo
+                  utilizarla y conservarla en buen estado. El tiempo de adaptación dependerá del tipo de órtesis y la
+                  complejidad
+                  del problema que está siendo manejado.
+                </p>
+              </div>
+
+              <section class="gallery-pages">
+                <div class="portfolio-wrapper">
+                  <div class="container popup-gallery">
+                    <ul class="items gallery-item row masonry">
+                      <li class="col-md-6" *ngFor="let img of clinica?.ortesis[0].cinco">
+                        <img class="img-responsive item-masonry" src="{{ img.url }}">
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+              <div class="col-md-12 marginfix">
+                <p>
+                  <strong>Usted y su Órtesista, Una Relación Continua.</strong>
+                </p>
+                <p>
+                  Aún en órtesis que se utilizan en períodos cortos de tiempo, usted necesitará regresar a consulta con
+                  el órtesista para ajustes menores y un adecuado seguimiento de su tratamiento. Si usted utilizará una
+                  órtesis por períodos mayores de tiempo, el órtesista
+                  deberá evaluar sus progresos con regularidad. Esto le asegurará que su órtesis esté funcionando
+                  adecuadamente y que continúa adaptada a usted en forma confortable.
+                </p>
+                <p>
+                  El órtesista y otros profesionales al cuidado de su salud, miembros del equipo clínico, continuarán
+                  vigilándolo hasta su completa rehabilitación.
+                </p>
+              </div>
+              <section class="gallery-pages">
+                <div class="portfolio-wrapper">
+                  <div class="container popup-gallery">
+                    <ul class="items gallery-item row masonry">
+                      <li class="col-md-6" *ngFor="let img of clinica?.ortesis[0].seis">
+                        <img class="img-responsive item-masonry" src="{{ img.url }}">
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+              <div class="col-md-12 marginfix">
+                <p>
+                  <strong>Recuerde esto:</strong>
+                </p>
+                <p>
+                  El aspecto más importante de su rehabilitación es su cooperación en el proceso. No hay fórmula mágica
+                  o una pastilla. Usted solamente aprovechara su proceso de rehabilitación en la medida en que coopere
+                  con él.
+                </p>
+                <a class="btn" href="./assets/docs/GUIA PARA EL PACIENTE RECIEN AMPUTADO.pdf" target="_blank"
+                  role="button">GUIA PARA EL PACIENTE RECIEN AMPUTADO</a>
+              </div>
+            </div>
+            <!--======= CUIDADO DE HERIDAS =========-->
+            <div role="tabpanel" class="tab-pane animated fadeIn" id="cuidadoheridas">
+              <h4>UNIDAD DE MANEJO AVANZADO DE HERIDAS</h4>
+              <p>Contamos con material, consumibles necesarios para realizar curaciones de heridas aguda y crónicas
+                dentro de las cuales contamos con hidrogeles, unguentos desidratantes, apositos de alta tecnología,
+                desbridamiento ultrasónico,
+                equipo de presión por presion negativa.</p>
+              <p>Nuestros protocolos de atención son basados en las guías internacionales más actualizadas en este tipo
+                de patología.</p>
+              <vg-player>
+                <vg-scrub-bar>
+                  <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+                  <vg-scrub-bar-buffering-time></vg-scrub-bar-buffering-time>
+                </vg-scrub-bar>
+                <vg-controls>
+                  <vg-play-pause></vg-play-pause>
+                  <vg-time-display [vgProperty]="'current'"></vg-time-display>
+                  <vg-scrub-bar></vg-scrub-bar>
+                  <vg-time-display [vgProperty]="'total'"></vg-time-display>
+                  <vg-mute></vg-mute>
+                  <vg-volume></vg-volume>
+                </vg-controls>
+                <video [vgMedia]="ultrasonido" #ultrasonido id="singleVideo">
+                  <source src="../../../../assets/videos/unidad de manejo avanzado de heridas - ultrasonico.mp4"
+                    type="video/mp4">
+                </video>
+              </vg-player>
+              <section class="gallery-pages">
+                <div class="masonry">
+                  <div class="item-masonry" *ngFor="let img of clinica?.unidad_manejo_avanzado_heridas">
+                    <img class="img-responsive" src="{{ img.url }}" alt="">
+                  </div>
+                </div>
+              </section>
+            </div>
+            <!--======= AMBULATORIA =========-->
+            <div role="tabpanel" class="tab-pane animated fadeIn" id="ambulatoria">
+              <h4>CIRUGÍA DE CORTA ESTANCIA O AMBULATORIA</h4>
+              <!-- <p>La cirugía ambulatoria puede ser una  cirugía mayor o menor de forma electiva donde el tiempo de recuperación es menor a 8 hrs, y se pueden egresar el mimdo día a su hogar;  gracias a los métodos quirúrgicos y analgésico modernos cada vez se realizan más cirugías ambulatorias en todo el país.</p> -->
+              <p>La cirugía ambulatoria o de corta estancia son intervenciones quirúrgicas para las cuales es necesario
+                permanecer en el hospital un período de 4 a 6 horas. Estos procedimientos han demostrado ser seguros y
+                efectivos
+                tanto como la cirugía convencional, razón por la cual su uso va en aumento. En Estados Unidos alrededor
+                del 70% de las cirugías son ambulatorias y en México cada año aumenta considerablemente el número de
+                cirugías
+                de corta estancia.</p>
+              <section class="gallery-pages">
+                <div class="masonry">
+                  <div class="item-masonry" *ngFor="let img of clinica?.cirugia_corta_estancia">
+                    <img class="img-responsive" src="{{ img.url }}" alt="">
+                  </div>
+                </div>
+              </section>
+            </div>
+            <!--======= LAPAROSCÓPICA =========-->
+            <div role="tabpanel" class="tab-pane animated fadeIn" id="laparoscopica">
+              <h4>CIRUGÍA LAPAROSCÓPICA</h4>
+              <p>Es cirugía de mínima invasión donde se aborda la patología por incisiones menores de 1cm. Y en las
+                cuales se pueden resolver enfermedades como: hernias inguinales, colelitiasis (piedras en la vesícula
+                biliar), quistes
+                de ovario, hernias de pared abdominal, oclusión tubaria bilateral OTB (método anticonceptivo
+                definitivo.)
+              </p>
+              <ul class="fact row">
+                <li class="col-md-6">
+                  <p>
+                    <i class="far fa-check-circle redcolor iconFix"></i>
+                    <strong class="font-italic">Hernioplastía:</strong> es un procedimiento para corregir una hernia
+                    cuando la pared muscular es débil, ya que tras retirarla, el saco busca la reparación de la pared
+                    abdominal.
+                  </p>
+                </li>
+                <li class="col-md-6">
+                  <p>
+                    <i class="far fa-check-circle redcolor iconFix"></i>
+                    <strong class="font-italic">Colecistectomía:</strong> Es la intervención quirúrgica que se realiza
+                    para extraer una vesícula biliar enferma.
+                  </p>
+                </li>
+              </ul>
+              <section class="gallery-pages">
+                <div class="masonry">
+                  <div class="item-masonry" *ngFor="let img of clinica?.laroscopica">
+                    <img class="img-responsive" src="{{ img.url }}" alt="">
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <!--======= VARICES =========-->
+            <div role="tabpanel" class="tab-pane animated fadeIn" id="varices">
+              <h4>TRATAMIENTO Y CIRUGÍA LASER DE VARICES</h4>
+              <div class="col-md-12 marginfix">
+                <p>Realizamos tratamientos de escleroterapia superficial, escleroterapia guiada por ultrasonido de venas
+                  perforantes o varices patológicas., ablación laser endovenosa, mini-flebectomías.</p>
+              </div>
+              <section class="gallery-pages">
+                <div class="masonry">
+                  <div class="item-masonry" *ngFor="let img of clinica?.cirugia_laser_varices">
+                    <img class="img-responsive" src="{{ img.url }}" alt="">
+                  </div>
+                </div>
+              </section>
+
+
+            </div>
+            <!--=======  =========-->
+            <div role="tabpanel" class="tab-pane animated fadeIn" id="nutricion">
+              <h4>NUTRICIÓN</h4>
+              <p>Para el área de Nutrición en UNI-CA CLÍNICA AMBULATORIA uno de los objetivos primordiales ha sido la
+                prevención de enfermedades relacionadas con LA OBESIDAD Y EL SOBREPESO COMO LO SON LA DIABETES, LA
+                HIPERTENSIÓN Y
+                NIVELES ALTOS DE COLESTEROL Y TRIGLICÉRIDOS, ASÍ COMO UNA MALA CIRCULACIÓN es por ello que en UNI-CA ha
+                ido en aumento las ORIENTACIONES ALIMENTARIAS, para cambiar estilos y hábitos alimentarios.</p>
+              <p>Un plan de alimentación debe de ser equilibrado, balanceado y completo, por lo que en UNI-CA, se cuida
+                ampliamente el beneficio nutricional del paciente. Otorgándoles un plan individualizado y personalizado,
+                en base
+                a la edad del paciente, su actividad física y a sus necesidades nutricionales.</p>
+              <section class="col-xs-12 col-md-12 item marginfix" *ngFor="let img of clinica?.nutricion">
+                <img class="img-responsive col-xs-12 col-md-12 item" src="{{ img.url }}" />
+              </section>
+            </div>
+
+            <!--=======  =========-->
+            <div role="tabpanel" class="tab-pane animated fadeIn" id="podologia">
+              <h4>CONSULTA DE ESPECIALIDAD:</h4>
+              <ul clas="fact row">
+                <li class="col-md-12">
+                  <p>
+                    <i class="far fa-check-circle redcolor "></i>
+                    <strong>Medicina interna</strong>
+                  </p>
+                </li>
+                <li class="col-md-12">
+                  <p>
+                    <i class="far fa-check-circle redcolor iconFix"></i>
+                    <strong>Traumatología</strong>
+                  </p>
+                </li>
+                <li class="col-md-12">
+                  <p>
+                    <i class="far fa-check-circle redcolor iconFix"></i>
+                    <strong>Infectología</strong>
+                  </p>
+                </li>
+                <li class="col-md-12">
+                  <p>
+                    <i class="far fa-check-circle redcolor iconFix"></i>
+                    <strong>Rehabilitación física</strong>
+                  </p>
+                </li>
+                <li class="col-md-12">
+                  <p>
+                    <i class="far fa-check-circle redcolor iconFix"></i>
+                    <strong>Laboratorio de análisis clínico</strong>
+                  </p>
+                </li>
+                <li class="col-md-12">
+                  <p>
+                    <i class="far fa-check-circle redcolor iconFix"></i>
+                    <strong>Rayos X</strong>
+                  </p>
+                </li>
+                <li class="col-md-12">
+                  <p>
+                    <i class="far fa-check-circle redcolor iconFix"></i>
+                    <strong>Podología</strong>
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <!--=======  =========-->
+            <div role="tabpanel" class="tab-pane animated fadeIn" id="medicinainterna">
+              <h4>MEDICINA INTERNA</h4>
+              <p></p>
+            </div>
+            <!--=======  =========-->
+            <div role="tabpanel" class="tab-pane animated fadeIn" id="traumatologia">
+              <h4>TRAUMATOLOGÍA</h4>
+              <p></p>
+            </div>
+            <!--=======  =========-->
+            <div role="tabpanel" class="tab-pane animated fadeIn" id="analisisclinicos">
+              <h4>LABORATORIO DE ANÁLISIS CLÍNICOS</h4>
+              <p></p>
+            </div>
+            <!--=======  =========-->
+            <div role="tabpanel" class="tab-pane animated fadeIn" id="rehabilitacionfisica">
+              <h4>REHABILITACIÓN FÍSICA</h4>
+              <p></p>
+            </div>
+            <!--=======  =========-->
+            <div role="tabpanel" class="tab-pane animated fadeIn" id="rayosx">
+              <h4>RAYOS X</h4>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

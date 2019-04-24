@@ -1,0 +1,23 @@
+<section class="sub-banner" data-stellar-background-ratio="0.5">
+
+  <div class="overlay">
+    <div class="container">
+      <img class="logo-comodin" src="../../../../assets/img/comodin.png" alt="logo-comodín">
+      <br>
+      <br>
+      <br>
+      <p class="p-text-bold">FARMACOS Y ARTÍCULOS MÉDICOS DE HERIDAS</p>
+    </div>
+  </div>
+</section>
+<section class="gallery-pages">
+  <div class="portfolio-wrapper">
+    <div class="container popup-gallery">
+      <ngx-masonry [options]="masonryOptions" [useImagesLoaded]="true">
+        <ngxMasonryItem *ngFor="let img of masonryImages" class="masonry-item">
+          <img src="{{ img.url }}" />
+        </ngxMasonryItem>
+      </ngx-masonry>
+    </div>
+  </div>
+</section>

@@ -1,1 +1,112 @@
-/* You can add global styles to this file, and also import other style files */
+.navbar-nav li:hover > ul.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu > .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+}
+
+/* rotate caret on hover */
+.dropdown-menu > li > a:hover:after {
+  text-decoration: underline;
+  transform: rotate(-90deg);
+}
+
+.navbar {
+  min-height: 80px;
+  background: #fff !important;
+}
+
+.box-nav {
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item {
+  margin: 0;
+  border-color: transparent;
+  text-decoration: none;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #34495e !important;
+  float: left;
+  letter-spacing: 0px;
+  font-size: 14px;
+  font-weight: bold !important;
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-item a:hover {
+  color: #ff6563 !important;
+}
+
+.navbar-fixed-top {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  background: #fff;
+}
+
+/* MENU */
+.linkActive {
+  color: #ff6563 !important;
+}
+
+/* TESTIMONIAL CAROUSEL */
+.container-testimonial {
+  margin: auto;
+  width: 70%;
+}
+
+/* GALLERY */
+
+.masonry-item {
+  width: 30%;
+  margin-bottom: 20px;
+}
+.masonry-item-clinica {
+  width: 45%;
+  margin-bottom: 20px;
+}
+
+/* GOOGLE MAPS */
+agm-map {
+  height: 400px;
+}
+/* TABS */
+
+.active {
+  color: #e52d27 !important;
+}
+
+/* ICONS */
+
+.iconFix {
+  color: #e52d27;
+  margin-bottom: 0px;
+  margin-right: 10px !important;
+}
+
+/* MASONRY */
+
+.masonry { /* Masonry container */
+  column-count: 2;
+  column-gap: 1em;
+}
+
+.masonry-fix { /* Masonry container */
+  column-count: 1;
+  column-gap: 1em;
+}
+
+.item-masonry { /* Masonry bricks or child elements */
+  background-color: #eee;
+  display: inline-block;
+  margin: 0 0 1em;
+  width: 100%;
+}

@@ -1,0 +1,45 @@
+<section class="sub-banner" data-stellar-background-ratio="0.5">
+  <div class="overlay">
+    <div class="container">
+      <h3>UNI-CA</h3>
+      <p class="p-text-bold">Clínica Ambulatoria</p>
+    </div>
+  </div>
+</section>
+<div class="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <h4>Ubícanos</h4>
+
+        <div class="contact-form">
+          <!--======= GOOGLE MAP =========-->
+          <agm-map [latitude]="20.433534" [longitude]="-101.711701" [zoom]="13">
+            <agm-marker [latitude]="20.433534" [longitude]="-101.711701" [iconUrl]="iconUrl">
+              <agm-info-window>UNI-CA</agm-info-window>
+            </agm-marker>
+          </agm-map>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <h4>Nuestro horario</h4>
+        <div class="timing">
+          <p *ngFor="let hr of horario?.horarios">{{hr.dia}}
+            <span> {{hr.hora}}</span>
+          </p>
+        </div>
+
+        <h4>Síguenos</h4>
+
+        <ul class="social_icons">
+          <li class="facebook">
+            <a href="https://www.facebook.com/Uni-Ca-Cl%C3%ADnica-Ambulatoria-919021944871793/" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
