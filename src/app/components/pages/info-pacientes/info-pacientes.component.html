@@ -425,11 +425,11 @@
           <section class="gallery-pages">
             <div class="portfolio-wrapper">
               <div class="container popup-gallery">
-                <ngx-masonry [options]="masonryOptions" [useImagesLoaded]="true">
-                  <ngxMasonryItem *ngFor="let img of masonryImages?.modulo_pie_riesgo" class="masonry-item">
-                    <img src="{{ img.url }}" />
-                  </ngxMasonryItem>
-                </ngx-masonry>
+                <ul class="items gallery-item row masonry">
+                  <li class="col-md-6" *ngFor="let img of masonryImages?.modulo_pie_riesgo" lazy-load-images>
+                    <img class="img-responsive item-masonry" [attr.data-src]="img.url">
+                  </li>
+                </ul>
               </div>
             </div>
           </section>
@@ -446,11 +446,11 @@
           <section class="gallery-pages">
             <div class="portfolio-wrapper">
               <div class="container popup-gallery">
-                <ngx-masonry [options]="masonryOptions" [useImagesLoaded]="true">
-                  <ngxMasonryItem *ngFor="let img of masonryImages?.pacientes_lesiones" class="masonry-item">
-                    <img src="{{ img.url }}" />
-                  </ngxMasonryItem>
-                </ngx-masonry>
+                <ul class="items gallery-item row masonry">
+                  <li class="col-md-6" *ngFor="let img of masonryImages?.pacientes_lesiones" lazy-load-images>
+                    <img class="img-responsive item-masonry" [attr.data-src]="img.url">
+                  </li>
+                </ul>
               </div>
             </div>
           </section>
@@ -471,11 +471,11 @@
           <section class="gallery-pages">
             <div class="portfolio-wrapper">
               <div class="container popup-gallery">
-                <ngx-masonry [options]="masonryOptions" [useImagesLoaded]="true">
-                  <ngxMasonryItem *ngFor="let img of masonryImages?.bypass" class="masonry-item">
-                    <img src="{{ img.url }}" />
-                  </ngxMasonryItem>
-                </ngx-masonry>
+                <ul class="items gallery-item row masonry">
+                  <li class="col-md-6" *ngFor="let img of masonryImages?.bypass" lazy-load-images>
+                    <img class="img-responsive item-masonry" [attr.data-src]="img.url">
+                  </li>
+                </ul>
               </div>
             </div>
           </section>
@@ -495,11 +495,11 @@
           <section class="gallery-pages">
             <div class="portfolio-wrapper">
               <div class="container popup-gallery">
-                <ngx-masonry [options]="masonryOptions" [useImagesLoaded]="true">
-                  <ngxMasonryItem *ngFor="let img of masonryImages?.cirugia_endovascular" class="masonry-item">
-                    <img src="{{ img.url }}" />
-                  </ngxMasonryItem>
-                </ngx-masonry>
+                <ul class="items gallery-item row masonry">
+                  <li class="col-md-6" *ngFor="let img of masonryImages?.cirugia_endovascular" lazy-load-images>
+                    <img class="img-responsive item-masonry" [attr.data-src]="img.url">
+                  </li>
+                </ul>
               </div>
             </div>
           </section>
@@ -522,11 +522,11 @@
           <section class="gallery-pages">
             <div class="portfolio-wrapper">
               <div class="container popup-gallery">
-                <ngx-masonry [options]="masonryOptions" [useImagesLoaded]="true">
-                  <ngxMasonryItem *ngFor="let img of masonryImages?.heridas_cronicas" class="masonry-item">
-                    <img src="{{ img.url }}" />
-                  </ngxMasonryItem>
-                </ngx-masonry>
+                <ul class="items gallery-item row masonry">
+                  <li class="col-md-6" *ngFor="let img of masonryImages?.heridas_cronicas" lazy-load-images>
+                    <img class="img-responsive item-masonry" [attr.data-src]="img.url">
+                  </li>
+                </ul>
               </div>
             </div>
           </section>

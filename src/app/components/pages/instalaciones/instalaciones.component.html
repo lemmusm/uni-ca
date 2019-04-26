@@ -13,12 +13,25 @@
         <span class="fixtitle">Nuestras instalaciones</span>
       </h2>
 
-      <ngx-masonry [options]="masonryOptions" [useImagesLoaded]="true">
-        <ngxMasonryItem *ngFor="let img of masonryImages" class="masonry-item">
-          <img src="{{ img.url }}" />
+      <section class="gallery-pages">
+        <div class="portfolio-wrapper">
+          <div class="container popup-gallery">
+            <ul class="items gallery-item row masonry">
+              <li class="col-md-6" *ngFor="let img of masonryImages" lazy-load-images>
+                <img class="img-responsive item-masonry" [attr.data-src]="img.url">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- <ngx-masonry [options]="masonryOptions" [useImagesLoaded]="false">
+        <ngxMasonryItem *ngFor="let img of masonryImages" lazy-load-images class="masonry-item">
+          <img [attr.data-src]="img.url" />
         </ngxMasonryItem>
-      </ngx-masonry>
-
+      </ngx-masonry> -->
+      <!-- <div class="image-list" lazy-load-images>
+        <img *ngFor="let img of masonryImages" [attr.data-src]="img.url">
+      </div> -->
     </div>
   </div>
 </section>

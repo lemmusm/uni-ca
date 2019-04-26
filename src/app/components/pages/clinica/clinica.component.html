@@ -114,8 +114,8 @@
                 <div class="portfolio-wrapper">
                   <div class="container popup-gallery">
                     <ul class="items gallery-item row masonry">
-                      <li class="col-md-6" *ngFor=" let img of clinica?.evaluacion_clinica_pie">
-                        <img class="img-responsive item-masonry" src="{{ img.url }}">
+                      <li class="col-md-6" *ngFor=" let img of clinica?.evaluacion_clinica_pie" lazy-load-images>
+                        <img class="img-responsive item-masonry" [attr.data-src]="img.url">
                       </li>
                     </ul>
                   </div>
@@ -145,8 +145,9 @@
                     <!-- GALERIA  ESTUDIOS COMPLEMENTARIOS 1: -->
                     <section class="gallery-pages">
                       <div class="masonry">
-                        <div class="item-masonry" *ngFor="let img of clinica?.unidad_integral_pie_diabetico.matscan">
-                          <img class="img-responsive" src="{{ img.url }}" alt="">
+                        <div class="item-masonry" *ngFor="let img of clinica?.unidad_integral_pie_diabetico.matscan"
+                          lazy-load-images>
+                          <img class="img-responsive" [attr.data-src]="img.url">
                         </div>
                       </div>
                     </section>
@@ -162,8 +163,9 @@
                     <!-- GALERIA  ESTUDIOS COMPLEMENTARIOS SCANFEET: -->
                     <section class="gallery-pages">
                       <div class="masonry">
-                        <div class="item-masonry" *ngFor="let img of clinica?.unidad_integral_pie_diabetico.scanfeet">
-                          <img class="img-responsive" src="{{ img.url }}" alt="">
+                        <div class="item-masonry" *ngFor="let img of clinica?.unidad_integral_pie_diabetico.scanfeet"
+                          lazy-load-images>
+                          <img class="img-responsive" [attr.data-src]="img.url" alt="">
                         </div>
                       </div>
                     </section>
@@ -187,8 +189,9 @@
                       <section class="gallery-pages">
                         <div class="masonry">
                           <div class="item-masonry"
-                            *ngFor="let img of clinica?.unidad_integral_pie_diabetico[0].estudios_baropodografia[0].bloque_uno">
-                            <img class="img-responsive" src="{{ img.url }}" alt="">
+                            *ngFor="let img of clinica?.unidad_integral_pie_diabetico[0].estudios_baropodografia[0].bloque_uno"
+                            lazy-load-images>
+                            <img class="img-responsive" [attr.data-src]="img.url" alt="">
                           </div>
                         </div>
                       </section>
@@ -208,8 +211,9 @@
                       <section class="gallery-pages">
                         <div class="masonry">
                           <div class="item-masonry"
-                            *ngFor="let img of clinica?.unidad_integral_pie_diabetico[0].estudios_baropodografia[0].bloque_dos">
-                            <img class="img-responsive" src="{{ img.url }}" alt="">
+                            *ngFor="let img of clinica?.unidad_integral_pie_diabetico[0].estudios_baropodografia[0].bloque_dos"
+                            lazy-load-images>
+                            <img class="img-responsive" [attr.data-src]="img.url" alt="">
                           </div>
                         </div>
                       </section>
@@ -222,8 +226,9 @@
                       <section class="gallery-pages">
                         <div class="masonry">
                           <div class="item-masonry"
-                            *ngFor="let img of clinica?.unidad_integral_pie_diabetico[0].estudios_baropodografia[0].bloque_tres">
-                            <img class="img-responsive" src="{{ img.url }}" alt="">
+                            *ngFor="let img of clinica?.unidad_integral_pie_diabetico[0].estudios_baropodografia[0].bloque_tres"
+                            lazy-load-images>
+                            <img class="img-responsive" [attr.data-src]="img.url" alt="">
                           </div>
                         </div>
                       </section>
@@ -243,8 +248,9 @@
                         <div class="container popup-gallery">
                           <ul class="items gallery-item row masonry">
                             <li class="col-md-6"
-                              *ngFor=" let img of clinica?.unidad_integral_pie_diabetico[0].invasivo_no_invasivo">
-                              <img class="img-responsive item-masonry" src="{{ img.url }}">
+                              *ngFor=" let img of clinica?.unidad_integral_pie_diabetico[0].invasivo_no_invasivo"
+                              lazy-load-images>
+                              <img class="img-responsive item-masonry" [attr.data-src]="img.url">
                             </li>
                           </ul>
                         </div>
@@ -266,8 +272,9 @@
                       <div class="portfolio-wrapper">
                         <div class="container popup-gallery">
                           <ul class="items gallery-item row masonry">
-                            <li class="col-md-6" *ngFor=" let img of clinica?.unidad_integral_pie_diabetico[0].doppler">
-                              <img class="img-responsive item-masonry" src="{{ img.url }}">
+                            <li class="col-md-6" *ngFor=" let img of clinica?.unidad_integral_pie_diabetico[0].doppler"
+                              lazy-load-images>
+                              <img class="img-responsive item-masonry" [attr.data-src]="img.url">
                             </li>
                           </ul>
                         </div>
@@ -291,8 +298,9 @@
                       <div class="portfolio-wrapper">
                         <div class="container popup-gallery">
                           <ul class="items gallery-item row masonry">
-                            <li class="col-md-6" *ngFor=" let img of clinica?.unidad_integral_pie_diabetico[0].tension">
-                              <img class="img-responsive item-masonry" src="{{ img.url }}">
+                            <li class="col-md-6" *ngFor=" let img of clinica?.unidad_integral_pie_diabetico[0].tension"
+                              lazy-load-images>
+                              <img class="img-responsive item-masonry" [attr.data-src]="img.url">
                             </li>
                           </ul>
                         </div>
@@ -327,7 +335,7 @@
                                   <vg-volume></vg-volume>
                                 </vg-controls>
                                 <video [vgMedia]="ultrasonido_doppler" #ultrasonido_doppler id="singleVideo">
-                                  <source src="../../../../assets/videos/ultrasonido doppler.mp4" type="video/mp4">
+                                  <source src="/../../..ssets/videos/ultrasonido doppler.mp4" type="video/mp4">
                                 </video>
                               </vg-player>
                             </li>
@@ -346,7 +354,7 @@
                                   <vg-volume></vg-volume>
                                 </vg-controls>
                                 <video [vgMedia]="ultrasonido" #ultrasonido id="singleVideo">
-                                  <source src="../../../../assets/videos/ultrasonido.mp4" type="video/mp4">
+                                  <source src="/../../..ssets/videos/ultrasonido.mp4" type="video/mp4">
                                 </video>
                               </vg-player>
                             </li>
@@ -367,8 +375,9 @@
                         <div class="container popup-gallery">
                           <ul class="items gallery-item row masonry">
                             <li class="col-md-6"
-                              *ngFor=" let img of clinica?.unidad_integral_pie_diabetico[0].angiografia">
-                              <img class="img-responsive item-masonry" src="{{ img.url }}">
+                              *ngFor=" let img of clinica?.unidad_integral_pie_diabetico[0].angiografia"
+                              lazy-load-images>
+                              <img class="img-responsive item-masonry" [attr.data-src]="img.url">
                             </li>
                           </ul>
                         </div>
@@ -406,8 +415,8 @@
                 <div class="portfolio-wrapper">
                   <div class="container popup-gallery">
                     <ul class="items gallery-item row masonry">
-                      <li class="col-md-6" *ngFor="let img of clinica?.ortesis[0].uno">
-                        <img class="img-responsive item-masonry" src="{{ img.url }}">
+                      <li class="col-md-6" *ngFor="let img of clinica?.ortesis[0].uno" lazy-load-images>
+                        <img class="img-responsive item-masonry" [attr.data-src]="img.url">
                       </li>
                     </ul>
                   </div>
@@ -435,8 +444,8 @@
                 <div class="portfolio-wrapper">
                   <div class="container popup-gallery">
                     <ul class="items gallery-item row masonry">
-                      <li class="col-md-6" *ngFor="let img of clinica?.ortesis[0].dos">
-                        <img class="img-responsive item-masonry" src="{{ img.url }}">
+                      <li class="col-md-6" *ngFor="let img of clinica?.ortesis[0].dos" lazy-load-images>
+                        <img class="img-responsive item-masonry" [attr.data-src]="img.url">
                       </li>
                     </ul>
                   </div>
@@ -462,8 +471,8 @@
                 <div class="portfolio-wrapper">
                   <div class="container popup-gallery">
                     <ul class="items gallery-item row masonry">
-                      <li class="col-md-6" *ngFor="let img of clinica?.ortesis[0].tres">
-                        <img class="img-responsive item-masonry" src="{{ img.url }}">
+                      <li class="col-md-6" *ngFor="let img of clinica?.ortesis[0].tres" lazy-load-images>
+                        <img class="img-responsive item-masonry" [attr.data-src]="img.url">
                       </li>
                     </ul>
                   </div>
@@ -488,8 +497,8 @@
                 <div class="portfolio-wrapper">
                   <div class="container popup-gallery">
                     <ul class="items gallery-item row masonry">
-                      <li class="col-md-6" *ngFor="let img of clinica?.ortesis[0].cuatro">
-                        <img class="img-responsive item-masonry" src="{{ img.url }}">
+                      <li class="col-md-6" *ngFor="let img of clinica?.ortesis[0].cuatro" lazy-load-images>
+                        <img class="img-responsive item-masonry" [attr.data-src]="img.url">
                       </li>
                     </ul>
                   </div>
@@ -519,8 +528,8 @@
                 <div class="portfolio-wrapper">
                   <div class="container popup-gallery">
                     <ul class="items gallery-item row masonry">
-                      <li class="col-md-6" *ngFor="let img of clinica?.ortesis[0].cinco">
-                        <img class="img-responsive item-masonry" src="{{ img.url }}">
+                      <li class="col-md-6" *ngFor="let img of clinica?.ortesis[0].cinco" lazy-load-images>
+                        <img class="img-responsive item-masonry" [attr.data-src]="img.url">
                       </li>
                     </ul>
                   </div>
@@ -546,8 +555,8 @@
                 <div class="portfolio-wrapper">
                   <div class="container popup-gallery">
                     <ul class="items gallery-item row masonry">
-                      <li class="col-md-6" *ngFor="let img of clinica?.ortesis[0].seis">
-                        <img class="img-responsive item-masonry" src="{{ img.url }}">
+                      <li class="col-md-6" *ngFor="let img of clinica?.ortesis[0].seis" lazy-load-images>
+                        <img class="img-responsive item-masonry" [attr.data-src]="img.url">
                       </li>
                     </ul>
                   </div>
@@ -589,14 +598,14 @@
                   <vg-volume></vg-volume>
                 </vg-controls>
                 <video [vgMedia]="ultrasonido" #ultrasonido id="singleVideo">
-                  <source src="../../../../assets/videos/unidad de manejo avanzado de heridas - ultrasonico.mp4"
+                  <source src="/../../..ssets/videos/unidad de manejo avanzado de heridas - ultrasonico.mp4"
                     type="video/mp4">
                 </video>
               </vg-player>
               <section class="gallery-pages">
                 <div class="masonry">
                   <div class="item-masonry" *ngFor="let img of clinica?.unidad_manejo_avanzado_heridas">
-                    <img class="img-responsive" src="{{ img.url }}" alt="">
+                    <img class="img-responsive" [attr.data-src]="img.url" alt="">
                   </div>
                 </div>
               </section>
@@ -614,8 +623,8 @@
                 de corta estancia.</p>
               <section class="gallery-pages">
                 <div class="masonry">
-                  <div class="item-masonry" *ngFor="let img of clinica?.cirugia_corta_estancia">
-                    <img class="img-responsive" src="{{ img.url }}" alt="">
+                  <div class="item-masonry" *ngFor="let img of clinica?.cirugia_corta_estancia" lazy-load-images>
+                    <img class="img-responsive" [attr.data-src]="img.url" alt="">
                   </div>
                 </div>
               </section>
@@ -648,8 +657,8 @@
               </ul>
               <section class="gallery-pages">
                 <div class="masonry">
-                  <div class="item-masonry" *ngFor="let img of clinica?.laroscopica">
-                    <img class="img-responsive" src="{{ img.url }}" alt="">
+                  <div class="item-masonry" *ngFor="let img of clinica?.laroscopica" lazy-load-images>
+                    <img class="img-responsive" [attr.data-src]="img.url" alt="">
                   </div>
                 </div>
               </section>
@@ -664,8 +673,8 @@
               </div>
               <section class="gallery-pages">
                 <div class="masonry">
-                  <div class="item-masonry" *ngFor="let img of clinica?.cirugia_laser_varices">
-                    <img class="img-responsive" src="{{ img.url }}" alt="">
+                  <div class="item-masonry" *ngFor="let img of clinica?.cirugia_laser_varices" lazy-load-images>
+                    <img class="img-responsive" [attr.data-src]="img.url" alt="">
                   </div>
                 </div>
               </section>
@@ -684,8 +693,9 @@
                 ampliamente el beneficio nutricional del paciente. Otorgándoles un plan individualizado y personalizado,
                 en base
                 a la edad del paciente, su actividad física y a sus necesidades nutricionales.</p>
-              <section class="col-xs-12 col-md-12 item marginfix" *ngFor="let img of clinica?.nutricion">
-                <img class="img-responsive col-xs-12 col-md-12 item" src="{{ img.url }}" />
+              <section class="col-xs-12 col-md-12 item marginfix" *ngFor="let img of clinica?.nutricion"
+                lazy-load-images>
+                <img class="img-responsive col-xs-12 col-md-12 item" [attr.data-src]="img.url" />
               </section>
             </div>
 

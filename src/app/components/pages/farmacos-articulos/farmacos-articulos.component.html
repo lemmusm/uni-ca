@@ -13,11 +13,11 @@
 <section class="gallery-pages">
   <div class="portfolio-wrapper">
     <div class="container popup-gallery">
-      <ngx-masonry [options]="masonryOptions" [useImagesLoaded]="true">
-        <ngxMasonryItem *ngFor="let img of masonryImages" class="masonry-item">
-          <img src="{{ img.url }}" />
-        </ngxMasonryItem>
-      </ngx-masonry>
+      <ul class="items gallery-item row masonry">
+        <li class="col-md-6" *ngFor="let img of masonryImages" lazy-load-images>
+          <img class="img-responsive item-masonry" [attr.data-src]="img.url">
+        </li>
+      </ul>
     </div>
   </div>
 </section>

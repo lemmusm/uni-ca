@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-// Masonry gallery
-import { NgxMasonryModule } from 'ngx-masonry';
+// Lazy load images
+import { LazyLoadImagesModule } from 'ngx-lazy-load-images';
 // Http
 import { HttpClientModule } from '@angular/common/http';
 // AngularMaps
@@ -42,7 +42,6 @@ import { ContactoComponent } from './components/pages/contacto/contacto.componen
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgxMasonryModule,
     HttpClientModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyD9oIqArqOp5NP4_EMNqWkQcQUukVvY0qE'
@@ -50,7 +49,8 @@ import { ContactoComponent } from './components/pages/contacto/contacto.componen
     VgCoreModule,
     VgControlsModule,
     VgOverlayPlayModule,
-    VgBufferingModule
+    VgBufferingModule,
+    LazyLoadImagesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
